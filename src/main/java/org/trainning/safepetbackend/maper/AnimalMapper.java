@@ -1,8 +1,8 @@
 package org.trainning.safepetbackend.maper;
 
-import org.trainning.safepetbackend.api.request.AtualizarAnimalRequest;
-import org.trainning.safepetbackend.api.request.CadastrarAnimalRequest;
-import org.trainning.safepetbackend.api.response.CadastrarAnimalResponse;
+import org.trainning.safepetbackend.api.animal.request.AtualizarAnimalRequest;
+import org.trainning.safepetbackend.api.animal.request.CadastrarAnimalRequest;
+import org.trainning.safepetbackend.api.animal.response.CadastrarAnimalResponse;
 import org.trainning.safepetbackend.domain.Animal;
 
 public class AnimalMapper {

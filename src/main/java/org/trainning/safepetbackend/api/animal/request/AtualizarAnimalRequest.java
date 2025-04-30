@@ -1,4 +1,4 @@
-package org.trainning.safepetbackend.api.request;
+package org.trainning.safepetbackend.api.animal.request;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -6,8 +6,8 @@ import org.trainning.safepetbackend.domain.enumerated.Porte;
 
 import java.time.LocalDate;
 
-public class CadastrarAnimalRequest {
-
+public class AtualizarAnimalRequest {
+    private String id;
     private String nome;
 
     @NotBlank(message = "A especie deve ser informada")
@@ -22,7 +22,7 @@ public class CadastrarAnimalRequest {
     @NotBlank
     private String cor;
 
-    public CadastrarAnimalRequest() {
+    public AtualizarAnimalRequest() {
     }
 
     public String getNome() {
@@ -31,6 +31,14 @@ public class CadastrarAnimalRequest {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getEspecie() {

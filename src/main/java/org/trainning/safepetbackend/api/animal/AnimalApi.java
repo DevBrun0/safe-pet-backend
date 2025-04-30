@@ -1,12 +1,12 @@
-package org.trainning.safepetbackend.api;
+package org.trainning.safepetbackend.api.animal;
 
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.trainning.safepetbackend.api.request.AtualizarAnimalRequest;
-import org.trainning.safepetbackend.api.request.CadastrarAnimalRequest;
-import org.trainning.safepetbackend.api.response.CadastrarAnimalResponse;
+import org.trainning.safepetbackend.api.animal.request.AtualizarAnimalRequest;
+import org.trainning.safepetbackend.api.animal.request.CadastrarAnimalRequest;
+import org.trainning.safepetbackend.api.animal.response.CadastrarAnimalResponse;
 import org.trainning.safepetbackend.domain.Animal;
 import org.trainning.safepetbackend.exception.AnimalNaoEncontradoException;
 import org.trainning.safepetbackend.maper.AnimalMapper;

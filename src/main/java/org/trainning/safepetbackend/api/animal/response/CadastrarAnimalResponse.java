@@ -1,4 +1,4 @@
-package org.trainning.safepetbackend.api.response;
+package org.trainning.safepetbackend.api.animal.response;
 
 public class CadastrarAnimalResponse {
 
