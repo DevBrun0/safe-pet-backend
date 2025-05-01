@@ -1,4 +1,4 @@
-package org.trainning.safepetbackend.maper;
+package org.trainning.safepetbackend.mapper;
 
 import org.trainning.safepetbackend.api.animal.request.AtualizarAnimalRequest;
 import org.trainning.safepetbackend.api.animal.request.CadastrarAnimalRequest;

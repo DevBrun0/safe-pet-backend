@@ -1,4 +1,4 @@
-package org.trainning.safepetbackend.repository;
+package org.trainning.safepetbackend.repository.animal;
 
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;

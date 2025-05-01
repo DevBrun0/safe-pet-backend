@@ -1,4 +1,4 @@
-package org.trainning.safepetbackend.repository;
+package org.trainning.safepetbackend.repository.animal;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
