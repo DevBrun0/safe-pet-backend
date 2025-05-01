@@ -1,4 +1,4 @@
-package org.trainning.safepetbackend.repository;
+package org.trainning.safepetbackend.repository.animal;
 
 import org.trainning.safepetbackend.domain.Animal;
 
