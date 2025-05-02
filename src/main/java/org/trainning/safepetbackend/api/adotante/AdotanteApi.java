@@ -6,16 +6,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.trainning.safepetbackend.api.adotante.request.AtualizarAdotanteRequest;
 import org.trainning.safepetbackend.api.adotante.request.CadastrarAdotanteRequest;
-import org.trainning.safepetbackend.api.adotante.response.CadastrarAdotanteResponse;
 import org.trainning.safepetbackend.domain.Adotante;
-import org.trainning.safepetbackend.domain.Animal;
-import org.trainning.safepetbackend.exception.AnimalNaoEncontradoException;
 import org.trainning.safepetbackend.mapper.AdotanteMapper;
-import org.trainning.safepetbackend.mapper.AnimalMapper;
 import org.trainning.safepetbackend.service.AdotanteService;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/adotante")

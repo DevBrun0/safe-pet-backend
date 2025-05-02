@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.trainning.safepetbackend.api.adotante.request.AtualizarAdotanteRequest;
 import org.trainning.safepetbackend.api.adotante.request.CadastrarAdotanteRequest;
 import org.trainning.safepetbackend.domain.Adotante;
+import org.trainning.safepetbackend.exception.adotante.IdadeMinimaException;
 import org.trainning.safepetbackend.mapper.AdotanteMapper;
 import org.trainning.safepetbackend.repository.adotante.AdotanteRepository;
 
@@ -23,7 +24,11 @@ public class AdotanteService {
 
     public Adotante cadastrarAdotante(CadastrarAdotanteRequest cadastrarAdotanteRequest){
         Adotante salvaCad = adotanteMapper.cadastrarAdotante(cadastrarAdotanteRequest);
-        return adotanteRepository.save(salvaCad);
+
+        if(salvaCad.getIdade() < 18){
+            throw new IdadeMinimaException("Menores de idade não podem executar essa ação");
+        }else return adotanteRepository.save(salvaCad);
+
     }
 
     public Adotante deletaAdotantePorId(@PathVariable String id){

@@ -3,7 +3,7 @@ package org.trainning.safepetbackend.service;
 import jakarta.validation.Valid;
 import org.springframework.stereotype.Service;
 import org.trainning.safepetbackend.domain.Animal;
-import org.trainning.safepetbackend.exception.AnimalNaoEncontradoException;
+import org.trainning.safepetbackend.exception.animal.AnimalNaoEncontradoException;
 import org.trainning.safepetbackend.repository.animal.AnimalRepository;
 
 import java.time.LocalDateTime;

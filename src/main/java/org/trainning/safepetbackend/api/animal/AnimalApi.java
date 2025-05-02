@@ -8,7 +8,7 @@ import org.trainning.safepetbackend.api.animal.request.AtualizarAnimalRequest;
 import org.trainning.safepetbackend.api.animal.request.CadastrarAnimalRequest;
 import org.trainning.safepetbackend.api.animal.response.CadastrarAnimalResponse;
 import org.trainning.safepetbackend.domain.Animal;
-import org.trainning.safepetbackend.exception.AnimalNaoEncontradoException;
+import org.trainning.safepetbackend.exception.animal.AnimalNaoEncontradoException;
 import org.trainning.safepetbackend.mapper.AnimalMapper;
 import org.trainning.safepetbackend.service.AnimalService;
 
