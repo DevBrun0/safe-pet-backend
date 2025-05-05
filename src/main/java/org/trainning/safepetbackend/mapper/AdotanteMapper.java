@@ -9,13 +9,14 @@ import org.trainning.safepetbackend.domain.Adotante;
 public class AdotanteMapper {
 
     public static Adotante cadastrarAdotante(CadastrarAdotanteRequest cadastrarAdotanteRequest){
+        Adotante adotante = new Adotante();
 
-        return new Adotante(
-                cadastrarAdotanteRequest.getNome(),
-                cadastrarAdotanteRequest.getIdade(),
-                cadastrarAdotanteRequest.getEnderecoCompleto(),
-                cadastrarAdotanteRequest.getDocumentoCpf()
-                );
+        adotante.setNome(cadastrarAdotanteRequest.getNome());
+        adotante.setIdade(cadastrarAdotanteRequest.getIdade());
+        adotante.setEnderecoCompleto(cadastrarAdotanteRequest.getEnderecoCompleto());
+        adotante.setDocumentoCpf(cadastrarAdotanteRequest.getDocumentoCpf());
+
+        return adotante;
 
     }
 
@@ -26,7 +27,7 @@ public class AdotanteMapper {
         adotante.setNome(atualizarAdotanteRequest.getNome());
         adotante.setIdade(atualizarAdotanteRequest.getIdade());
         adotante.setEnderecoCompleto(atualizarAdotanteRequest.getEnderecoCompleto());
-        adotante.setDocumentoCpf(adotante.getDocumentoCpf());
+        adotante.setDocumentoCpf(atualizarAdotanteRequest.getDocumentoCpf());
 
         return adotante;
     }
